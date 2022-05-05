@@ -1,0 +1,39 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/PostEditor.cs">
+    <Files>
+      <File FileName="src/About.cs" Line="1" Column="1" />
+      <File FileName="Buzm.Utility/src/NUnitHarness.cs" Line="1" Column="1" />
+      <File FileName="Buzm.Schemas/src/ChannelType.cs" Line="1" Column="1" />
+      <File FileName="Buzm.Register/src/Registry.cs" Line="1" Column="1" />
+      <File FileName="src/Hives/HiveEditor.cs" Line="1" Column="1" />
+      <File FileName="App.config" Line="1" Column="1" />
+      <File FileName="src/HiveView.cs" Line="103" Column="31" />
+      <File FileName="Buzm.Network/src/Sockets/PeerManager.cs" Line="20" Column="32" />
+      <File FileName="src/MainForm.cs" Line="294" Column="3" />
+      <File FileName="src/RegistryActor.cs" Line="1" Column="1" />
+      <File FileName="src/UserEditor.cs" Line="1" Column="1" />
+      <File FileName="src/RegistryEditor.cs" Line="1" Column="1" />
+      <File FileName="Buzm.Utility/src/Config.cs" Line="1" Column="1" />
+      <File FileName="src/Hives/HiveModel.cs" Line="1" Column="1" />
+      <File FileName="src/Hives/HiveManager.cs" Line="192" Column="5" />
+      <File FileName="src/Hives/FeedEditor.cs" Line="1" Column="1" />
+      <File FileName="Buzm.Network/src/Feeds/FeedModel.cs" Line="1" Column="1" />
+      <File FileName="Buzm.Utility/src/Log.cs" Line="1" Column="1" />
+      <File FileName="Buzm.Network/src/Web/HttpMethods.cs" Line="1" Column="1" />
+      <File FileName="Buzm.Network/src/Web/RestEventArgs.cs" Line="13" Column="24" />
+      <File FileName="Buzm.Network/src/INetworkManager.cs" Line="1" Column="1" />
+      <File FileName="src/Hives/RestEventRouter.cs" Line="9" Column="29" />
+      <File FileName="src/DeskController.cs" Line="15" Column="47" />
+      <File FileName="src/Hives/IHiveController.cs" Line="1" Column="1" />
+      <File FileName="src/PostEditor.cs" Line="22" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/Omar/Code/buzm/src/MainForm.cs" line="1370" column="1" />
+      <Breakpoint file="/Users/Omar/Code/buzm/src/UserEditor.cs" line="125" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

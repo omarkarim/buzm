@@ -1,0 +1,23 @@
+# Compiler output folders
+bin/
+
+# Intermediate build objects
+obj/
+
+# Subversion repo folders
+.svn/
+
+# User profile folders
+Data/
+
+# Installer files
+.ise
+
+# Obfuscator files
+Protect.bat
+
+# MacOS metadata
+.DS_Store
+
+
+

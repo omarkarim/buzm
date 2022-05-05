@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A9D5400E-E4ED-4208-B87E-4BEE9F2D51B1}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Buzm</AssemblyName>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Buzm</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Installation|AnyCPU' ">
+    <OutputPath>bin\Installation\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting">
+      <Name>System.Runtime.Remoting</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="Buzm.Network\Buzm.Network.csproj">
+      <Name>Buzm.Network</Name>
+      <Project>{4F49BC7F-51AA-487A-BCFD-8A8BB1D31EAB}</Project>
+    </ProjectReference>
+    <ProjectReference Include="Buzm.Register\Buzm.Register.csproj">
+      <Name>Buzm.Register</Name>
+      <Project>{95FEBBE8-10C1-476F-9DD3-2E26A5EC6D07}</Project>
+    </ProjectReference>
+    <ProjectReference Include="Buzm.Schemas\Buzm.Schemas.csproj">
+      <Name>Buzm.Schemas</Name>
+      <Project>{4124AA46-AEFC-4816-97AC-D2718E9F56B8}</Project>
+    </ProjectReference>
+    <ProjectReference Include="Buzm.Utility\Buzm.Utility.csproj">
+      <Name>Buzm.Utility</Name>
+      <Project>{06D51367-390B-4DE0-A998-DF969743AAC3}</Project>
+    </ProjectReference>
+    <Reference Include="nunit.framework, Version=2.4.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <Content Include="App.ico" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\DeskController.cs" />
+    <Compile Include="src\HiveController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Hives\FeedDeleter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Hives\FeedEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Hives\HiveDeleter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Hives\HiveEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Hives\HiveManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\Hives\HiveModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\Hives\IHiveController.cs" />
+    <Compile Include="src\Hives\InviteActor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Hives\MemberDeleter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Hives\MemberDeleter.Designer.cs">
+      <DependentUpon>MemberDeleter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Hives\MemberEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Hives\MemberEditor.Designer.cs">
+      <DependentUpon>MemberEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Hives\RestEventRouter.cs" />
+    <Compile Include="src\HiveTrayView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\HiveView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\NetStatusPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="src\NetworkView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\PostEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\RegistryActor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\RegistryEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\SingleInstance.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\UserEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="src\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\HiveController.resx">
+      <DependentUpon>HiveController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Hives\FeedDeleter.resx">
+      <DependentUpon>FeedDeleter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Hives\FeedEditor.resx">
+      <DependentUpon>FeedEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Hives\HiveDeleter.resx">
+      <DependentUpon>HiveDeleter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Hives\HiveEditor.resx">
+      <DependentUpon>HiveEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Hives\InviteActor.resx">
+      <DependentUpon>InviteActor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Hives\MemberDeleter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MemberDeleter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Hives\MemberEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MemberEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\HiveTrayView.resx">
+      <DependentUpon>HiveTrayView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\HiveView.resx">
+      <DependentUpon>HiveView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\NetStatusPanel.resx">
+      <DependentUpon>NetStatusPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\NetworkView.resx">
+      <DependentUpon>NetworkView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\PostEditor.resx">
+      <DependentUpon>PostEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\RegistryActor.resx">
+      <DependentUpon>RegistryActor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\RegistryEditor.resx">
+      <DependentUpon>RegistryEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\UserEditor.resx">
+      <DependentUpon>UserEditor.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
